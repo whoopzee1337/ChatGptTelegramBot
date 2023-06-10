@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class Usage {
-    private int promptTokens;
-    private int completionTokens;
-    private int totalTokens;
+    private int prompt_tokens;
+    private int completion_tokens;
+    private int total_tokens;
 }

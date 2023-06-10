@@ -8,5 +8,5 @@ import java.util.List;
 public class ChatGPTRequest {
     private String model;
     private List<Message> messages;
-    private Integer maxTokens;
+    private Integer max_tokens;
 }

@@ -1,8 +1,7 @@
 package com.example.chatgpttelegrambot.service;
 
-import com.example.chatgpttelegrambot.model.ChatGPTRequest;
-import com.example.chatgpttelegrambot.model.ChatGptResponse;
+import com.example.chatgpttelegrambot.model.ChatGPTResponse;
 
 public interface ChatGPTService {
-    ChatGptResponse getChatGPTResponse(String prompt);
+    ChatGPTResponse getChatGPTResponse(String prompt);
 }
