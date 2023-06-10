@@ -35,7 +35,7 @@ public class ChatGPTServiceImpl implements ChatGPTService {
         ChatGPTRequest chatGPTRequest = new ChatGPTRequest();
         chatGPTRequest.setModel("gpt-3.5-turbo");
         chatGPTRequest.setMessages(List.of(Message.builder().role("user").content(prompt).build()));
-        chatGPTRequest.setMax_tokens(20);
+        chatGPTRequest.setMax_tokens(2000);
 
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity<ChatGPTRequest> request = new HttpEntity<>(chatGPTRequest, headers);

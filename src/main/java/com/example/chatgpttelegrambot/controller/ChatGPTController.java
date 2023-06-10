@@ -16,7 +16,7 @@ public class ChatGPTController {
     private final ChatGPTService chatGPTService;
 
     @PostMapping("/chat")
-    public ResponseEntity<ChatGPTResponse> processInputRequest(@RequestBody ChatBotInputRequest chatBotInputRequest){
+    public ResponseEntity<ChatGPTResponse> processInputRequest(@RequestBody ChatBotInputRequest chatBotInputRequest) {
         return ResponseEntity.ok(chatGPTService.getChatGPTResponse(chatBotInputRequest.getMessage()));
     }
 }
